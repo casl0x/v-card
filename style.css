@@ -79,7 +79,7 @@ body{
     background: var(--secondcolor);
     width: 250px;
     height: 80x;
-    border-radius: 20px;
+    border-radius: 50px;
     transition: all .5s;
 
     display: flex;

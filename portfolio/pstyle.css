@@ -1,0 +1,11 @@
+body {
+    background: linear-gradient(90deg, #121212, #CBCBCB);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+img {
+    width: 200px;
+}
