@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+:root {
+    --maincolor: #fac070;
+    --secondcolor: #D6FF79;
+    --shadow: #f2ffd4;
+    --font1: 'Bebas Neue', sans-serif ;
+    --font2: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #1b1a1a;
+
+    display: flex;
+    align-items: center;
+}
+
+/*identity card*/
+.idcard{
+    background: var(--maincolor) ;
+    width: 600px;
+    height: 700px;
+    margin: 120px 145px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.idcard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-top: 30px;
+}
+.idcard h1 {
+    font-size: 50px;
+    font-family: var(--font1);
+    margin: 10px auto;
+}
+.idcard .jd {
+    font-family: var(--font2);
+    margin: 0 auto;
+    font-size: 20px;
+}
+.idcard .am {
+    font-family: var(--font1);
+    font-size: 30px;
+    margin: 40px auto;
+    width: 320px;
+    text-align: center;
+}
+
+.icons a {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+.icons img {
+    border-radius: none;
+}
+
+/*arrow*/
+.arrow img {
+    width: 150px ;
+    filter: drop-shadow(-3px 3px 5px var(--shadow));
+    margin: 70px;
+}
+
+/*portfolio button*/
+
