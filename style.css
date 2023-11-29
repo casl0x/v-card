@@ -4,15 +4,18 @@
     --maincolor: #fac070;
     --secondcolor: #D6FF79;
     --shadow: #f2ffd4;
+    --bgcolor: #1b1a1a;
     --font1: 'Bebas Neue', sans-serif ;
     --font2: 'Montserrat', sans-serif;
 }
 
 body{
-    background: #1b1a1a;
+    background: var(--bgcolor);
+    margin: 13vh 5vw;
 
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 /*identity card*/
@@ -20,14 +23,13 @@ body{
     background: var(--maincolor) ;
     width: 600px;
     height: 700px;
-    margin: 120px 145px;
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.idcard img {
+.idcard img[alt="avatar"] {
     width: 150px;
     height: 150px;
     border-radius: 150px;
@@ -46,9 +48,10 @@ body{
 .idcard .am {
     font-family: var(--font1);
     font-size: 30px;
-    margin: 40px auto;
+    margin: 20px auto;
     width: 320px;
     text-align: center;
+    padding-top: 45px;
 }
 
 .icons a {
@@ -57,7 +60,11 @@ body{
     color: black;
 }
 .icons img {
-    border-radius: none;
+    width: 50px;
+    margin: auto 10px;
+}
+.icons {
+    padding-top: 110px;
 }
 
 /*arrow*/
@@ -68,4 +75,28 @@ body{
 }
 
 /*portfolio button*/
+.pfbtn {
+    background: var(--secondcolor);
+    width: 250px;
+    height: 80x;
+    border-radius: 20px;
+    transition: all .5s;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pfbtn a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font1);
+    font-size: 40px;
+}
+.pfbtn:hover {
+    border-radius: 20px;
+    transform: translateY(-10px);
+    box-shadow: 
+    0 6px 0 -2px #6AB395,
+    0 10px 0 -4px #EAAF3D,
+    0 14px 0 -3px #927F91;
+}
